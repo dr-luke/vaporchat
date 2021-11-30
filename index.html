@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>VaporChat</title>
+		<script src="./static/resources/jquery/jquery-3.6.0.min.js"></script>
+		<script src="./static/resources/peer-js/peerjs.min.js"></script>
+		<script src="./static/resources/crypto-js/crypto-js.min.js"></script>
+		<script src="./static/resources/crypto-js/sha512.min.js"></script>
+		<script src="./static/resources/crypto-js/aes.min.js"></script>
+		<script src="./static/js/base.js"></script>
+	</head>
+	<body>
+		<div>
+			<span>
+				<Label for="nickname">Nickname:</Label>
+				<input id="nickname" type="text" autocomplete="off">
+			</span>
+			<br>
+			<span>
+				<Label for="host_id">Host ID:</Label>
+				<input id="host_id" type="text" autocomplete="off">
+			</span>
+			<br>
+			<span>
+				<Label for="host_password">Password:</Label>
+				<input id="host_password" type="password" autocomplete="off">
+			</span>
+			<button id="start_host">Start Host</button>
+			<button id="start_client">Join Host</button>
+		</div>
+	<br><br><br>
+		<div>
+			<textarea id="chat_log" cols="140" rows="20"></textarea>
+			<br>
+			<label for="chat_input">Message:</label>
+			<input id="chat_input" type="text" autocomplete="off"><button id="send_message">Send</button>
+		</div>
+	</body>
+</html>
